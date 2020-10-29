@@ -1,0 +1,37 @@
+<header class="ScriptHeader">
+  <div class="rt-container">
+    <div class="col-rt-12">
+      <div class="rt-heading">
+        <h1>Login Form<span></span></h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="rt-container">
+    <div class="col-rt-12">
+      <div class="simpleLogin">
+        <div class="form">
+          <legend>Let's Login</legend>
+          <fieldset>
+            <input
+              id="username"
+              placeholder="Username"
+              type="text"
+              [formControl]="username"
+            />
+            <input
+              id="pass"
+              placeholder="Password"
+              type="password"
+              [formControl]="password"
+            />
+            <input id="submit" type="submit" value="Log in" (click)="onSubmit()" />
+          </fieldset>
+        </div>
+        <p style="text-align: center"></p>
+      </div>
+    </div>
+  </div>
+</section>
